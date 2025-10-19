@@ -1,5 +1,7 @@
 # HobDrive Dashkit Template
 
+[English](README.md) | [Русский](README_RU.md) | [Español](README_ES.md)
+
 This is a template repository for creating your own custom dashkits for HobDrive.
 
 ## Getting Started
