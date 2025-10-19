@@ -1,0 +1,35 @@
+<!--
+  HobDrive Dashkit Template
+  
+  This is a simple template layout showing basic dashboard elements.
+  Customize this file to create your own dashboard!
+  
+  Tips:
+  - Use <section> to create different dashboard screens
+  - Use <grid> to organize items in rows and columns
+  - Use <item id="SensorName"> to display sensor data
+  - See LAYOUT_SPEC.md for complete documentation
+-->
+<ui>
+  <!-- Main Dashboard Screen -->
+  <section name="Dashboard">
+    <grid rows=",," cols=",,">
+      
+      <!-- Top row: Large speed display -->
+      <item id="Speed" size="giant" colspan="2"/>      
+      <item id="RPM" size="giant" colspan="2"/>
+      
+      <!-- Second row: Three medium-sized items -->
+      <item id="CoolantTemp" size="large"/>
+      <item id="FuelLevel" size="large"/>
+      <item id="BatteryVoltage" size="large" period="30000"/>
+      
+      <!-- Third row: Trip computer data -->
+      <item id="FuelEconomy_instant" size="large"/>
+      <item id="FuelEconomy_trip" size="large" period="10000"/>
+      <item id="DistanceRun" size="large" period="5000"/>
+      
+    </grid>
+  </section>
+    
+</ui>
